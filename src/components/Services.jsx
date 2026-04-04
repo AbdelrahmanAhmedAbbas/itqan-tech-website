@@ -31,7 +31,7 @@ const Services = () => {
 
 const CardLayout = ({ title, desc, tag, children, theme }) => {
   return (
-    <div className="surface-tint relative flex min-h-[500px] flex-col overflow-hidden rounded-[2rem] border border-Border/60 bg-Surface p-8 shadow-[0_14px_38px_rgba(24,24,27,0.045)] group">
+    <div className="surface-tint relative flex min-h-[500px] flex-col overflow-hidden rounded-[2rem] border border-Border/60 bg-Surface p-8 shadow-[0_14px_38px_theme('colors.Ink/[4.5%]')] group">
       <div className={`absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-current to-transparent opacity-70 ${theme.textLine || theme.tone}`}></div>
       <div className="relative flex flex-1 min-w-safe items-center justify-center">
         {children}
@@ -146,7 +146,7 @@ const MobileCard = ({ title, desc, tag, theme }) => {
         {/* Floating Panel Panel */}
         <div 
           ref={sheetRef}
-          className="relative w-[140px] h-[160px] bg-White rounded-t-2xl shadow-[0_0_30px_rgba(0,0,0,0.04)] border border-Border/30 flex flex-col items-center pt-3 px-4"
+          className="relative w-[140px] h-[160px] bg-White rounded-t-2xl shadow-[0_0_30px_theme('colors.Void/4%')] border border-Border/30 flex flex-col items-center pt-3 px-4"
         >
           <div className="w-8 h-1 bg-Border/50 rounded-full mb-6"></div>
           <div className="w-full h-1.5 bg-Sand/30 rounded-full mb-3"></div>

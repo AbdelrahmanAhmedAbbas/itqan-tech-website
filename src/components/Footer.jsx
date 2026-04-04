@@ -6,7 +6,7 @@ const Footer = () => {
   const { t, isRTL } = useLanguage();
 
   return (
-    <footer className="bg-Void text-Snow pt-24 pb-8 rounded-t-[2rem] md:rounded-t-[3rem] px-6 mt-[-2rem] relative z-20 shadow-[0_-10px_30px_rgba(0,0,0,0.5)] overflow-hidden">
+    <footer className="bg-Void text-Snow pt-24 pb-8 rounded-t-[2rem] md:rounded-t-[3rem] px-6 mt-[-2rem] relative z-20 shadow-[0_-10px_30px_theme('colors.Void/50%')] overflow-hidden">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-Accent/12 to-transparent" />
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">

@@ -44,7 +44,7 @@ const Testimonials = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {reviews.map((r, i) => (
-            <div key={i} className="testim-card min-w-0 surface-tint bg-Snow rounded-[2rem] p-8 border border-Border/60 shadow-[0_8px_24px_rgba(24,24,27,0.04)] relative overflow-hidden">
+            <div key={i} className="testim-card min-w-0 surface-tint bg-Snow rounded-[2rem] p-8 border border-Border/60 shadow-[0_8px_24px_theme('colors.Ink/4%')] relative overflow-hidden">
               <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-Accent/40 to-transparent"></div>
               <div className="text-5xl font-serif text-Sand opacity-60 leading-none mb-4">"</div>
               <p className="text-safe text-Ink font-sans text-lg mb-8 leading-relaxed">

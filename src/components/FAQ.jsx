@@ -50,7 +50,7 @@ const FAQ = () => {
           {items.map((item, i) => (
             <div
               key={i}
-              className="faq-item surface-tint bg-Snow rounded-2xl border border-Border/60 shadow-[0_10px_26px_rgba(24,24,27,0.04)] overflow-hidden"
+              className="faq-item surface-tint bg-Snow rounded-2xl border border-Border/60 shadow-[0_10px_26px_theme('colors.Ink/4%')] overflow-hidden"
             >
               <button
                 id={`faq-button-${i}`}
