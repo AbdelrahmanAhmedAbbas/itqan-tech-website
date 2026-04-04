@@ -1,0 +1,202 @@
+{
+  "nav": {
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "process": "Process",
+    "contact": "Contact",
+    "bookCall": "Book a Call",
+    "lang": "AR",
+    "langToggle": "العربية"
+  },
+  "hero": {
+    "line1": "We Don't Just Build.",
+    "line2": "We Master.",
+    "subtext": "We turn SaaS ideas into scalable products — web, mobile, and AI-powered — in weeks, not quarters. Your technical partner from the first line of code to your first million users.",
+    "cta": "Get Your Free Strategy Call",
+    "scroll": "Scroll"
+  },
+  "socialProof": {
+    "stat1": {
+      "number": "12+",
+      "label": "Products Launched"
+    },
+    "stat2": {
+      "number": "98%",
+      "label": "Client Retention"
+    },
+    "stat3": {
+      "number": "<24h",
+      "label": "Response Time"
+    },
+    "stat4": {
+      "number": "3",
+      "label": "Countries Served"
+    }
+  },
+  "services": {
+    "saas": {
+      "tag": "SaaS",
+      "title": "SaaS Development",
+      "desc": "Go from idea to paying users. We handle the complex architecture so you can focus on growing your business — built to scale from day one."
+    },
+    "mobile": {
+      "tag": "Mobile",
+      "title": "Mobile Apps",
+      "desc": "Apps your users won't delete. Native iOS and Android experiences designed to retain, engage, and convert — not just look pretty."
+    },
+    "web": {
+      "tag": "Web",
+      "title": "Web Development",
+      "desc": "Websites that work as hard as you do. Fast-loading, conversion-optimized web apps that turn visitors into customers."
+    }
+  },
+  "philosophy": {
+    "line1": "Most agencies focus on shipping code and closing tickets.",
+    "line2": "We focus on building the product that makes your competitors ",
+    "keyword": "irrelevant."
+  },
+  "builtFor": {
+    "kicker": "Who we work with",
+    "title": "Built for founders who:",
+    "items": [
+      "Have a validated idea but need a technical team to build it",
+      "Are tired of agencies that over-promise and under-deliver",
+      "Need a production-ready product, not a prototype",
+      "Want a partner who challenges their thinking, not just nods along"
+    ]
+  },
+  "portfolio": {
+    "p1": {
+      "name": "FinFlow",
+      "industry": "Fintech",
+      "desc": "Real-time analytics dashboard for B2B financial operations.",
+      "result": "Reduced client reporting time by 80%. Helped close Series A.",
+      "tech": [
+        "React",
+        "Node.js",
+        "PostgreSQL"
+      ],
+      "link": "#"
+    },
+    "p2": {
+      "name": "Nova SaaS",
+      "industry": "Enterprise",
+      "desc": "AI-powered CRM workflow automation platform.",
+      "result": "3,000+ active users within 6 months of launch.",
+      "tech": [
+        "Next.js",
+        "Python",
+        "Redis"
+      ],
+      "link": "#"
+    },
+    "p3": {
+      "name": "Lumina App",
+      "industry": "Health & Fitness",
+      "desc": "Cross-platform wellness tracker with native wearable integrations.",
+      "result": "4.8-star rating with 50K+ downloads in 3 months.",
+      "tech": [
+        "React Native",
+        "Firebase",
+        "HealthKit"
+      ],
+      "link": "#"
+    },
+    "viewProject": "View Project",
+    "midCta": {
+      "title": "Ready to build yours?",
+      "cta": "Let's Talk About Your Project"
+    }
+  },
+  "process": {
+    "step1": {
+      "num": "01",
+      "title": "Discover",
+      "desc": "We learn your business, users, and market before anything else. You'll leave the first call with a clear technical roadmap — free."
+    },
+    "step2": {
+      "num": "02",
+      "title": "Architect",
+      "desc": "We map the system — data flow, user journeys, tech stack — before a single line of code."
+    },
+    "step3": {
+      "num": "03",
+      "title": "Engineer",
+      "desc": "AI-accelerated development. Weekly demos. You see progress, not promises."
+    },
+    "step4": {
+      "num": "04",
+      "title": "Launch & Scale",
+      "desc": "Deployment, monitoring, and iteration. We don't hand off and disappear — we stay post-launch until you're growing."
+    }
+  },
+  "testimonials": {
+    "t1": {
+      "quote": "We were 6 months behind on our product roadmap when we brought in Itqan. They shipped our MVP in 8 weeks and we closed our first enterprise contract a month later.",
+      "name": "Sarah Jenkins",
+      "role": "Founder",
+      "company": "MetricsCorp"
+    },
+    "t2": {
+      "quote": "Our previous agency treated us like a ticket queue. Itqan felt like a co-founder — they pushed back on bad ideas and proposed better architecture. Our churn dropped 40% after the rebuild.",
+      "name": "David Alston",
+      "role": "CEO",
+      "company": "NovaTech"
+    },
+    "t3": {
+      "quote": "The mobile app launched on time with zero critical bugs. We went from 0 to 50K downloads in 3 months. The animations and interactions our users love? That was all Itqan.",
+      "name": "Elena Rostova",
+      "role": "Product Lead",
+      "company": "Lumina"
+    }
+  },
+  "faq": {
+    "kicker": "Quick answers",
+    "title": "Common Questions",
+    "items": [
+      {
+        "q": "How much does a typical project cost?",
+        "a": "Projects typically range from $15K–$80K depending on scope. We'll give you an honest estimate on the first call — no surprises later."
+      },
+      {
+        "q": "How long does development take?",
+        "a": "Most MVPs ship in 8–12 weeks. Complex platforms take 4–6 months. You'll see weekly demos from week one."
+      },
+      {
+        "q": "Do you work with early-stage startups?",
+        "a": "Yes — if you have a validated idea and are ready to invest in building it properly. We're not the right fit for 'just exploring' projects."
+      },
+      {
+        "q": "What happens after launch?",
+        "a": "We don't disappear. We offer ongoing support, monitoring, and iteration packages. Most clients keep us on retainer."
+      },
+      {
+        "q": "Do I own the code?",
+        "a": "100%. You own everything we build — code, designs, infrastructure. No lock-in, no strings attached."
+      },
+      {
+        "q": "What if I'm not happy with the work?",
+        "a": "Weekly demos mean you see progress constantly. If something isn't right, we course-correct immediately — not after months of silent development."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Your next product is one conversation away.",
+    "subtext": "Book a free 30-minute call. We'll review your idea, outline the architecture, and tell you exactly what it takes to build it — even if you don't hire us.",
+    "primary": "Get Your Free Strategy Call",
+    "secondary": "Or email us directly → hello@itqan.dev",
+    "benefits": [
+      "Honest feedback on your product idea",
+      "A high-level technical roadmap",
+      "Estimated timeline and budget range",
+      "Clear next steps — zero obligation"
+    ]
+  },
+  "footer": {
+    "tagline": "Mastery in every pixel.",
+    "systemStatus": "System Operational",
+    "rights": "© 2026 Itqan. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}

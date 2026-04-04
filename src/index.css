@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-Snow text-Ink font-sans antialiased overflow-x-hidden;
+    background-image:
+      radial-gradient(circle at top left, theme('colors.Accent / 5.5%'), transparent 30%),
+      radial-gradient(circle at 85% 18%, theme('colors.Sand / 5%'), transparent 24%),
+      linear-gradient(180deg, theme('colors.Snow') 0%, theme('colors.Surface') 45%, theme('colors.Snow') 100%);
+  }
+
+  ::selection {
+    background: theme('colors.Accent / 18%');
+    color: theme('colors.Ink');
+  }
+
+  a,
+  button,
+  [role='button'],
+  input,
+  textarea,
+  select {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  [role='button']:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: 2px solid theme('colors.Accent / 55%');
+    outline-offset: 3px;
+  }
+
+  /* Brighter focus ring on dark backgrounds */
+  .bg-Void a:focus-visible,
+  .bg-Void button:focus-visible,
+  .bg-Void [role='button']:focus-visible {
+    outline-color: theme('colors.Accent-Hover / 85%');
+  }
+
+  /* RTL Support overrides */
+  html[dir="rtl"] {
+    text-align: right;
+  }
+
+  html[lang="ar"] .font-sans {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+  }
+
+  html[lang="ar"] .font-serif {
+    font-family: 'Noto Naskh Arabic', serif;
+  }
+  
+  html[lang="en"] .font-sans {
+    font-family: 'Inter', sans-serif;
+  }
+
+  html[lang="en"] .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+
+/* Buttons magnetic wipe */
+.btn-magnetic {
+  @apply relative overflow-hidden transition-transform duration-300;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.btn-magnetic:hover {
+  transform: scale(1.03);
+}
+
+.btn-wipe::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: theme('colors.Accent-Deep');
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 0;
+}
+
+html[dir="rtl"] .btn-wipe::before {
+  left: auto;
+  right: -100%;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.btn-wipe:hover::before {
+  transform: translateX(100%);
+}
+
+html[dir="rtl"] .btn-wipe:hover::before {
+  transform: translateX(-100%);
+}
+
+.btn-wipe > *:not(.sr-only) {
+  position: relative;
+  z-index: 1;
+}
+
+/* Interactive elements hover */
+.interactive-lift {
+  @apply transition-transform duration-300;
+}
+.interactive-lift:hover {
+  transform: translateY(-1px);
+}
+
+.btn-accent {
+  box-shadow: 0 10px 28px theme('colors.Accent / 12%');
+}
+
+.btn-accent:hover {
+  box-shadow: 0 14px 36px theme('colors.Accent / 18%');
+}
+
+.section-kicker {
+  @apply inline-flex items-center gap-2 rounded-full border px-4 py-2 text-[11px] font-mono uppercase tracking-[0.28em] text-Accent shadow-[0_10px_26px_rgba(24,90,219,0.06)];
+  background-color: theme('colors.White / 88%');
+  border-color: theme('colors.Accent / 12%');
+}
+
+.surface-tint {
+  background-image: linear-gradient(180deg, theme('colors.White / 84%'), theme('colors.Accent / 2%'));
+}
+
+.text-safe {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.min-w-safe {
+  min-width: 0;
+}
+
+.dark-grid {
+  background-image:
+    linear-gradient(theme('colors.Accent / 6%') 1px, transparent 1px),
+    linear-gradient(90deg, theme('colors.Accent / 6%') 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .btn-magnetic:hover,
+  .interactive-lift:hover {
+    transform: none;
+  }
+}
