@@ -12,7 +12,7 @@ const MidCTA = () => {
           {t('portfolio.midCta.title')}
         </h2>
         <a
-          href="https://cal.com/itqan/consultation"
+          href="https://cal.com/abdelrahman-abbas/discovery-call"
           target="_blank"
           rel="noreferrer"
           className="btn-magnetic btn-wipe btn-accent inline-flex items-center px-8 py-4 rounded-full bg-Accent text-White text-base font-medium transition-shadow"

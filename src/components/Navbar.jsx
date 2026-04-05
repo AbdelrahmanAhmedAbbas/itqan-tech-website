@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/useLanguage';
 import { Menu, X } from 'lucide-react';
 import lightLogo from '../assets/itqan_logo_light_mode.svg';
@@ -81,10 +82,10 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { name: t('nav.services'), href: '#services' },
-    { name: t('nav.portfolio'), href: '#portfolio' },
-    { name: t('nav.process'), href: '#process' },
-    { name: t('nav.contact'), href: '#contact' },
+    { name: t('nav.services'), href: '/#services' },
+    { name: t('nav.portfolio'), href: '/#portfolio' },
+    { name: t('nav.process'), href: '/#process' },
+    { name: t('nav.contact'), href: '/#contact' },
   ];
 
   return (
@@ -95,7 +96,7 @@ const Navbar = () => {
       <div className="px-6 flex items-center justify-between">
 
         {/* Logo */}
-        <a href="#" className="flex-shrink-0 interactive-lift">
+        <Link to="/" className="flex-shrink-0 interactive-lift">
           <img
             src={isScrolled ? lightLogo : darkLogo}
             alt="Itqan Tech — Mastery in Technology"
@@ -110,7 +111,7 @@ const Navbar = () => {
           <span className="hidden font-sans font-bold text-xl tracking-tight">
             {isRTL ? 'إتقان' : 'Itqan'}
           </span>
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8" aria-label={isRTL ? 'التنقل الرئيسي' : 'Main navigation'}>
@@ -137,7 +138,7 @@ const Navbar = () => {
           </button>
 
           <a
-            href="https://cal.com/itqan/consultation"
+            href="https://cal.com/abdelrahman-abbas/discovery-call"
             target="_blank"
             rel="noreferrer"
             className="btn-magnetic btn-wipe btn-accent px-5 py-2.5 rounded-full bg-Accent text-White text-sm font-medium whitespace-nowrap max-w-full truncate"
@@ -187,7 +188,7 @@ const Navbar = () => {
             {t('nav.langToggle')}
           </button>
           <a
-            href="https://cal.com/itqan/consultation"
+            href="https://cal.com/abdelrahman-abbas/discovery-call"
             target="_blank"
             rel="noreferrer"
             className="btn-accent mt-4 text-center py-3 rounded-full bg-Accent text-White font-medium"

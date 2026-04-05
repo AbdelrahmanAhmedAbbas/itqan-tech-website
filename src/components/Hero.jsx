@@ -88,7 +88,7 @@ const Hero = () => {
 
         <div className="hero-anim">
           <a
-            href="https://cal.com/itqan/consultation"
+            href="https://cal.com/abdelrahman-abbas/discovery-call"
             target="_blank"
             rel="noreferrer"
             className="btn-magnetic btn-wipe btn-accent inline-flex items-center px-6 py-4 md:px-10 md:py-5 rounded-full bg-Accent text-White text-base md:text-lg font-medium transition-shadow"

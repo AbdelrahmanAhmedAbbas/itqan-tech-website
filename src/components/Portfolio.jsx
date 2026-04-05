@@ -1,9 +1,12 @@
 import React, { useLayoutEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/useLanguage';
 import { useMediaQuery } from '../hooks/useMediaQuery';
 import { usePrefersReducedMotion } from '../hooks/usePrefersReducedMotion';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import coreEnImg from '../assets/core-en-platform.png';
+import wasfaImg from '../assets/wasfa-mobile-app.png';
 
 const Portfolio = () => {
   const { t, isRTL } = useLanguage();
@@ -19,9 +22,9 @@ const Portfolio = () => {
       industry: t('portfolio.p1.industry'),
       desc: t('portfolio.p1.desc'),
       result: t('portfolio.p1.result'),
-      tech: ['React', 'Node.js', 'PostgreSQL'],
-      img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80',
-      link: t('portfolio.p1.link'),
+      tech: ['Next.js', 'TypeScript', 'Prisma', 'MySQL'],
+      img: coreEnImg,
+      link: '/case-study/core-en',
       bgLayer: <RadarBg />
     },
     {
@@ -30,20 +33,9 @@ const Portfolio = () => {
       industry: t('portfolio.p2.industry'),
       desc: t('portfolio.p2.desc'),
       result: t('portfolio.p2.result'),
-      tech: ['Next.js', 'Python', 'Redis'],
-      img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80',
-      link: t('portfolio.p2.link'),
-      bgLayer: <ScannerBg />
-    },
-    {
-      id: 'p3',
-      name: t('portfolio.p3.name'),
-      industry: t('portfolio.p3.industry'),
-      desc: t('portfolio.p3.desc'),
-      result: t('portfolio.p3.result'),
-      tech: ['React Native', 'Firebase', 'HealthKit'],
-      img: 'https://images.unsplash.com/photo-1526498450123-5e926ea614fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80',
-      link: t('portfolio.p3.link'),
+      tech: ['React Native', 'Expo', 'TypeScript'],
+      img: wasfaImg,
+      link: '/case-study/wasfa',
       bgLayer: <WaveBg />
     }
   ];
@@ -146,10 +138,10 @@ const Portfolio = () => {
                       </span>
                     ))}
                   </div>
-                  <a href={project.link} className="interactive-lift inline-flex max-w-full items-center gap-2 font-medium text-Accent-Light transition-colors hover:text-Sand-Soft">
+                  <Link to={project.link} className="interactive-lift inline-flex max-w-full items-center gap-2 font-medium text-Accent-Light transition-colors hover:text-Sand-Soft">
                     <span className="text-safe">{t('portfolio.viewProject')}</span>
                     <span aria-hidden="true">{isRTL ? '←' : '→'}</span>
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="relative min-h-[16rem] md:min-h-full">
@@ -219,12 +211,12 @@ const Portfolio = () => {
                 ))}
               </div>
 
-              <a href={project.link} className="flex max-w-full items-center gap-2 text-Accent-Light hover:text-Sand-Soft font-medium transition-colors w-max interactive-lift group drop-shadow-[0_0_18px_theme('colors.Accent-Light/18%')]">
+              <Link to={project.link} className="flex max-w-full items-center gap-2 text-Accent-Light hover:text-Sand-Soft font-medium transition-colors w-max interactive-lift group drop-shadow-[0_0_18px_theme('colors.Accent-Light/18%')]">
                 <span className="text-safe">{t('portfolio.viewProject')}</span>
                 <span className="transition-transform group-hover:translate-x-1 inline-block">
                   {isRTL ? '←' : '→'}
                 </span>
-              </a>
+              </Link>
             </div>
 
             {/* Image Side */}
@@ -261,12 +253,6 @@ const RadarBg = () => (
   </div>
 );
 
-const ScannerBg = () => (
-  <div className="w-full h-full relative">
-    <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(theme("colors.Accent / 85%") 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
-    <div className="absolute top-0 left-0 w-full h-[2px] bg-Accent shadow-[0_0_15px_theme('colors.Accent/80%')]" />
-  </div>
-);
 
 const WaveBg = () => (
   <svg aria-hidden="true" className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import SocialProof from './components/SocialProof';
@@ -12,9 +13,27 @@ import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
+import CaseStudy from './pages/CaseStudy';
+
+function HomePage() {
+  return (
+    <>
+      <Hero />
+      <SocialProof />
+      <Services />
+      <Philosophy />
+      <BuiltFor />
+      <Portfolio />
+      <MidCTA />
+      <Process />
+      <Testimonials />
+      <FAQ />
+      <CTA />
+    </>
+  );
+}
 
 function App() {
-  // Prevent hydration flash if needed
   useEffect(() => {
     document.body.style.visibility = 'visible';
   }, []);
@@ -32,17 +51,10 @@ function App() {
       </a>
       <Navbar />
       <main id="main-content" className="relative z-10">
-        <Hero />
-        <SocialProof />
-        <Services />
-        <Philosophy />
-        <BuiltFor />
-        <Portfolio />
-        <MidCTA />
-        <Process />
-        <Testimonials />
-        <FAQ />
-        <CTA />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/case-study/:slug" element={<CaseStudy />} />
+        </Routes>
       </main>
       <Footer />
     </div>

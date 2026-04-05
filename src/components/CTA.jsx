@@ -72,7 +72,7 @@ const CTA = () => {
 
         <div className="flex flex-col items-center gap-6">
           <a
-            href="https://cal.com/itqan/consultation"
+            href="https://cal.com/abdelrahman-abbas/discovery-call"
             target="_blank"
             rel="noreferrer"
             className="btn-magnetic btn-wipe btn-accent px-10 py-5 rounded-full bg-Accent text-White text-lg font-medium transition-shadow duration-300"
@@ -81,7 +81,7 @@ const CTA = () => {
             <span className="sr-only"> (opens in new tab)</span>
           </a>
           <a
-            href="mailto:hello@itqan.dev"
+            href="mailto:abdelrahman.abbas@itqan.tech"
             className="text-Muted-Light hover:text-Snow transition-colors text-sm font-mono"
           >
             {t('cta.secondary')}

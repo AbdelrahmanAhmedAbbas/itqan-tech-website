@@ -67,45 +67,79 @@
   },
   "portfolio": {
     "p1": {
-      "name": "FinFlow",
-      "industry": "Fintech",
-      "desc": "Real-time analytics dashboard for B2B financial operations.",
-      "result": "Reduced client reporting time by 80%. Helped close Series A.",
-      "tech": [
-        "React",
-        "Node.js",
-        "PostgreSQL"
-      ],
-      "link": "#"
+      "name": "Core EN Platform",
+      "industry": "Engineering Operations",
+      "desc": "An engineering office ran on spreadsheets. We replaced every single one with a platform their whole team uses daily.",
+      "result": "Payroll went from 2 days to 4 hours. Zero spreadsheets left.",
+      "tech": ["Next.js", "TypeScript", "Prisma", "MySQL"],
+      "link": "/case-study/core-en"
     },
     "p2": {
-      "name": "Nova SaaS",
-      "industry": "Enterprise",
-      "desc": "AI-powered CRM workflow automation platform.",
-      "result": "3,000+ active users within 6 months of launch.",
-      "tech": [
-        "Next.js",
-        "Python",
-        "Redis"
-      ],
-      "link": "#"
+      "name": "Wasfa",
+      "industry": "Food & Lifestyle",
+      "desc": "A meal planning app that does three things perfectly: plan meals, find recipes, build shopping lists.",
+      "result": "4.8-star rating. Users save 3+ hours a week.",
+      "tech": ["React Native", "Expo", "TypeScript"],
+      "link": "/case-study/wasfa"
     },
-    "p3": {
-      "name": "Lumina App",
-      "industry": "Health & Fitness",
-      "desc": "Cross-platform wellness tracker with native wearable integrations.",
-      "result": "4.8-star rating with 50K+ downloads in 3 months.",
-      "tech": [
-        "React Native",
-        "Firebase",
-        "HealthKit"
-      ],
-      "link": "#"
-    },
-    "viewProject": "View Project",
+    "viewProject": "View Case Study",
     "midCta": {
       "title": "Ready to build yours?",
       "cta": "Let's Talk About Your Project"
+    }
+  },
+  "caseStudy": {
+    "backToPortfolio": "Back to Portfolio",
+    "overview": "Overview",
+    "challenge": "The Challenge",
+    "solution": "Our Approach",
+    "techStack": "Tech Stack",
+    "keyFeatures": "What We Built",
+    "results": "The Impact",
+    "nextProject": "Next Project",
+    "coreEn": {
+      "title": "Core EN Platform",
+      "subtitle": "One platform replaced every spreadsheet in the office.",
+      "industry": "Engineering Operations",
+      "overview": "An engineering design office ran their entire operation on spreadsheets — projects, timesheets, payroll, expenses, everything. We built Core EN to replace all of it. One platform, one source of truth, used by every person in the office, every day.",
+      "challenge": "Every Friday was chaos. Field engineers submitted timesheets on paper. The office manager re-entered them into Excel. Payroll took two full days of manual calculations — tax deductions, insurance, overtime. One mistake meant redoing the entire sheet. Project costs lived in a separate spreadsheet that was always outdated. Client invoices were assembled by hand. The office had outgrown its tools years ago, but every solution they'd tried was either too generic or too complicated to adopt.",
+      "solution": "We didn't build a generic ERP. We sat with the team — engineers, managers, accountants — and mapped exactly how they work. Then we built around their workflows, not the other way around. Engineers log timesheets and request leaves from their devices. Managers approve with one click. Payroll generates automatically with taxes, insurance, and overtime calculated. Invoices pull directly from project data. Every role sees exactly what they need, nothing more.",
+      "features": [
+        "Timesheet logging with overtime tracking — no more paper forms or Friday re-entry",
+        "One-click payroll generation — tax, insurance, and deductions calculated automatically",
+        "Leave and permission requests with multi-level approval chains",
+        "Project cost tracking that stays accurate because it pulls from live data",
+        "Invoice generation from project records — PDF export in seconds",
+        "Role-based dashboards — engineers, managers, and accountants each see what matters"
+      ],
+      "results": [
+        "Payroll processing dropped from 2 days to 4 hours",
+        "Zero spreadsheets in daily operations",
+        "Project setup went from 30 minutes to under 5",
+        "First time the office had real-time visibility into margins"
+      ]
+    },
+    "wasfa": {
+      "title": "Wasfa",
+      "subtitle": "The app that answers \"what's for dinner\" before you even ask.",
+      "industry": "Food & Lifestyle",
+      "overview": "Wasfa is a meal planning app for people who want to eat well but hate the mental load of deciding what to cook. Pick recipes, plan your week, get a shopping list — done. Available in English and Arabic.",
+      "challenge": "The weekly cycle: open the fridge, stare at it, close it, order delivery. You know you should plan meals. You've tried — pinned recipes on Pinterest, downloaded apps that wanted you to log macros and count calories. But all you actually need is a simple answer to one question: what am I cooking this week? Nothing on the market respected that simplicity.",
+      "solution": "We stripped meal planning to its core: three actions. Plan Meals. Find Recipes. Build Lists. No calorie tracking, no fitness goals, no onboarding questionnaire. Open the app, browse recipes, drag them into your week, and your shopping list writes itself. The design is intentionally calm — warm greens, clean type, zero clutter. We built it bilingual from day one, with full Arabic and English support, so it feels native in both languages.",
+      "features": [
+        "Drag meals into your weekly plan — the entire week visible at a glance",
+        "Browse curated recipes with filters that actually help you decide",
+        "Shopping lists generate automatically from your planned meals",
+        "Full Arabic and English experience — not a translation, native in both",
+        "Opens to your plan, not a settings screen — built for daily use",
+        "30-second onboarding — name, preferences, start planning"
+      ],
+      "results": [
+        "Users save 3+ hours a week they used to spend deciding what to cook",
+        "9 out of 10 users finish onboarding on their first launch",
+        "4.8-star average rating — users cite simplicity as the #1 reason",
+        "Live in 4 countries across English and Arabic markets"
+      ]
     }
   },
   "process": {
@@ -184,7 +218,7 @@
     "title": "Your next product is one conversation away.",
     "subtext": "Book a free 30-minute call. We'll review your idea, outline the architecture, and tell you exactly what it takes to build it — even if you don't hire us.",
     "primary": "Get Your Free Strategy Call",
-    "secondary": "Or email us directly → hello@itqan.dev",
+    "secondary": "Or email us directly → abdelrahman.abbas@itqan.tech",
     "benefits": [
       "Honest feedback on your product idea",
       "A high-level technical roadmap",

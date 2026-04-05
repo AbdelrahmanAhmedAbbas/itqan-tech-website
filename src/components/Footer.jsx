@@ -36,17 +36,17 @@ const Footer = () => {
 
           {/* Col 2: Navigation */}
           <nav aria-label={isRTL ? 'تذييل الموقع' : 'Footer navigation'} className="flex flex-col gap-4">
-            <a href="#services" className="text-Muted-Light hover:text-Snow transition-colors py-1 min-h-[44px] flex items-center">{t('nav.services')}</a>
-            <a href="#portfolio" className="text-Muted-Light hover:text-Snow transition-colors py-1 min-h-[44px] flex items-center">{t('nav.portfolio')}</a>
-            <a href="#process" className="text-Muted-Light hover:text-Snow transition-colors py-1 min-h-[44px] flex items-center">{t('nav.process')}</a>
-            <a href="#contact" className="text-Muted-Light hover:text-Snow transition-colors py-1 min-h-[44px] flex items-center">{t('nav.contact')}</a>
+            <a href="/#services" className="text-Muted-Light hover:text-Snow transition-colors py-1 min-h-[44px] flex items-center">{t('nav.services')}</a>
+            <a href="/#portfolio" className="text-Muted-Light hover:text-Snow transition-colors py-1 min-h-[44px] flex items-center">{t('nav.portfolio')}</a>
+            <a href="/#process" className="text-Muted-Light hover:text-Snow transition-colors py-1 min-h-[44px] flex items-center">{t('nav.process')}</a>
+            <a href="/#contact" className="text-Muted-Light hover:text-Snow transition-colors py-1 min-h-[44px] flex items-center">{t('nav.contact')}</a>
           </nav>
 
           {/* Col 3: Social + Status */}
           <div className="flex flex-col gap-2">
-            <a href="#socials" aria-disabled="true" className="text-Muted-Light hover:text-Snow transition-colors py-1 min-h-[44px] flex items-center">LinkedIn</a>
-            <a href="#socials" aria-disabled="true" className="text-Muted-Light hover:text-Snow transition-colors py-1 min-h-[44px] flex items-center">Twitter / X</a>
-            <a href="#socials" aria-disabled="true" className="text-Muted-Light hover:text-Snow transition-colors py-1 min-h-[44px] flex items-center">Instagram</a>
+            <a href="https://www.linkedin.com/in/abdelrahman114/" target="_blank" rel="noreferrer" className="text-Muted-Light hover:text-Snow transition-colors py-1 min-h-[44px] flex items-center">LinkedIn</a>
+            <a href="https://x.com/AbdoAhmedAbbas" target="_blank" rel="noreferrer" className="text-Muted-Light hover:text-Snow transition-colors py-1 min-h-[44px] flex items-center">Twitter / X</a>
+            <a href="https://www.instagram.com/abdelrahman_ahmed_abbas/" target="_blank" rel="noreferrer" className="text-Muted-Light hover:text-Snow transition-colors py-1 min-h-[44px] flex items-center">Instagram</a>
             <div className="flex items-center gap-2 pt-3 mt-1 border-t border-White/5">
               <div className="w-2 h-2 rounded-full bg-Mint animate-pulse"></div>
               <span className="text-xs font-mono text-Muted-Light">{t('footer.systemStatus')}</span>
