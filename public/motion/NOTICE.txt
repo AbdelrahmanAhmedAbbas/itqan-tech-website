@@ -1,0 +1,5 @@
+HyperFrames core and player are distributed under the Apache License 2.0. Their bundled sources are used without modification.
+
+GSAP 3.14.2 is distributed under its standard license: https://gsap.com/standard-license/ . Copyright notices are retained in the bundled GSAP sources.
+
+Inter fonts retain their license in /fonts/Inter-LICENSE.txt.

@@ -1,64 +1,119 @@
-import React, { useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import SocialProof from './components/SocialProof';
-import Services from './components/Services';
-import Philosophy from './components/Philosophy';
-import BuiltFor from './components/BuiltFor';
-import Portfolio from './components/Portfolio';
-import MidCTA from './components/MidCTA';
-import Process from './components/Process';
-import Testimonials from './components/Testimonials';
-import FAQ from './components/FAQ';
-import CTA from './components/CTA';
-import Footer from './components/Footer';
-import CaseStudy from './pages/CaseStudy';
-
-function HomePage() {
-  return (
-    <>
-      <Hero />
-      <SocialProof />
-      <Services />
-      <Philosophy />
-      <BuiltFor />
-      <Portfolio />
-      <MidCTA />
-      <Process />
-      <Testimonials />
-      <FAQ />
-      <CTA />
-    </>
+import { useEffect, useRef } from "react";
+import {
+  Navigate,
+  Route,
+  Routes,
+  useLocation,
+  useParams,
+} from "react-router-dom";
+import MotionProvider from "./components/MotionProvider";
+import PageMotion from "./components/PageMotion";
+import SiteHeader from "./components/SiteHeader";
+import SiteFooter from "./components/SiteFooter";
+import BookingProvider from "./components/BookingProvider";
+import { HomePage, LegalPage, NotFoundPage } from "./pages/SitePages";
+import ProjectPage from "./pages/ProjectPage";
+import { copy, projectForSlug } from "./content";
+import { getAttribution, loadAnalytics, trackPageview } from "./lib/analytics";
+import { getMetadata } from "./lib/metadata";
+function LegacyCase() {
+  const { slug } = useParams();
+  return projectForSlug(slug) ? (
+    <Navigate to={`/work/${slug}`} replace />
+  ) : (
+    <NotFoundPage />
   );
 }
-
-function App() {
+function RouteEffects() {
+  const { pathname, hash } = useLocation();
+  const previous = useRef(pathname);
   useEffect(() => {
-    document.body.style.visibility = 'visible';
-  }, []);
-
+    getAttribution();
+    loadAnalytics();
+    trackPageview(pathname);
+    document.documentElement.lang = "en";
+    document.documentElement.dir = "ltr";
+    const m = getMetadata(pathname);
+    document.title = m.title;
+    const set = (selector, value) =>
+      document.querySelector(selector)?.setAttribute("content", value);
+    set('meta[name="description"]', m.description);
+    set('meta[name="robots"]', m.noindex ? "noindex, follow" : "index, follow");
+    for (const key of ["title", "description", "image"]) {
+      set(`meta[property="og:${key}"]`, m[key]);
+      set(`meta[name="twitter:${key}"]`, m[key]);
+    }
+    set('meta[property="og:url"]', m.url);
+    document
+      .querySelector('link[rel="canonical"]')
+      ?.setAttribute("href", m.url);
+    const schema = document.getElementById("site-schema");
+    if (schema) schema.textContent = JSON.stringify(m.structuredData);
+    const changed = previous.current !== pathname;
+    previous.current = pathname;
+    requestAnimationFrame(() => {
+      if (hash) {
+        const target = document.getElementById(
+          decodeURIComponent(hash.slice(1)),
+        );
+        target?.scrollIntoView({
+          behavior: window.matchMedia("(prefers-reduced-motion:reduce)").matches
+            ? "instant"
+            : "smooth",
+        });
+        if (target) {
+          target.tabIndex = -1;
+          target.focus({ preventScroll: true });
+        }
+      } else if (changed) {
+        window.scrollTo({ top: 0, behavior: "instant" });
+        const heading = document.querySelector("main h1");
+        if (heading) {
+          heading.tabIndex = -1;
+          heading.focus({ preventScroll: true });
+        }
+      }
+    });
+  }, [pathname, hash]);
+  return null;
+}
+export default function App() {
+  const { pathname } = useLocation();
   return (
-    <div className="relative min-h-screen overflow-hidden bg-Snow font-sans text-Ink">
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-[38rem] bg-[radial-gradient(circle_at_top,rgba(24,90,219,0.08),transparent_58%)]" />
-      <div className="pointer-events-none absolute right-0 top-[28rem] h-[24rem] w-[24rem] rounded-full bg-[radial-gradient(circle,rgba(184,138,90,0.07),transparent_65%)] blur-3xl" />
-      <div className="pointer-events-none absolute left-0 top-[76rem] h-[24rem] w-[24rem] rounded-full bg-[radial-gradient(circle,rgba(47,125,104,0.055),transparent_68%)] blur-3xl" />
-      <a
-        href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-Accent focus:text-White focus:rounded-lg focus:shadow-lg focus:text-sm focus:font-medium"
-      >
-        Skip to content
-      </a>
-      <Navbar />
-      <main id="main-content" className="relative z-10">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/case-study/:slug" element={<CaseStudy />} />
-        </Routes>
-      </main>
-      <Footer />
-    </div>
+    <MotionProvider>
+      <BookingProvider>
+        <PageMotion />
+        <RouteEffects />
+        <a className="skip-link" href="#main-content">
+          {copy.common.skip}
+        </a>
+        <SiteHeader />
+        <main id="main-content" tabIndex={-1} key={pathname}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/work/:slug" element={<ProjectPage />} />
+            <Route path="/privacy" element={<LegalPage type="privacy" />} />
+            <Route path="/terms" element={<LegalPage type="terms" />} />
+            <Route path="/case-study/:slug" element={<LegacyCase />} />
+            {[
+              ["/start", "/"],
+              ["/services", "/#services"],
+              ["/work", "/#work"],
+              ["/how-we-work", "/#pricing"],
+              ["/about", "/"],
+              ["/contact", "/#loom-request"],
+            ].map(([from, to]) => (
+              <Route
+                key={from}
+                path={from}
+                element={<Navigate to={to} replace />}
+              />
+            ))}
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </main>
+        <SiteFooter />
+      </BookingProvider>
+    </MotionProvider>
   );
 }
-
-export default App;

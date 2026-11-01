@@ -1,236 +1,407 @@
 {
-  "nav": {
-    "services": "Services",
-    "portfolio": "Portfolio",
-    "process": "Process",
-    "contact": "Contact",
-    "bookCall": "Book a Call",
-    "lang": "AR",
-    "langToggle": "العربية"
+  "common": {
+    "primary": "Request your free 2-minute Loom",
+    "secondary": "Book a 15-minute call",
+    "skip": "Skip to content",
+    "menu": "Open navigation",
+    "closeMenu": "Close navigation",
+    "close": "Close dialog",
+    "brandAlt": "Itqan Tech",
+    "home": "Itqan Tech — home",
+    "privacy": "Privacy Policy",
+    "terms": "Terms",
+    "linkedin": "LinkedIn",
+    "backWork": "Back to work",
+    "nextCase": "Next case study",
+    "caseStudy": "Case study",
+    "viewCase": "Explore the case study",
+    "live": "Live, in daily use",
+    "inBuild": "In build",
+    "planned": "In build. Go-live planned for 23 Nov 2026.",
+    "ownProduct": "Our own product",
+    "demo": "Real application · demo data",
+    "scope": "Scope",
+    "platform": "Platform",
+    "status": "Status",
+    "stack": "Stack",
+    "problem": "The problem",
+    "built": "What we built",
+    "building": "What we're building",
+    "howWorked": "How we worked",
+    "loading": "Loading the booking page…",
+    "bookingTitle": "15-minute intro call with Itqan Tech",
+    "bookingNote": "15 minutes. Times in your own time zone.",
+    "bookingFallback": "Open the booking page",
+    "bookingUnavailable": "Booking page to be confirmed.",
+    "pause": "Pause animations",
+    "play": "Play animations",
+    "reduced": "Animations reduced",
+    "reducedLabel": "Animations reduced by your device settings",
+    "inside": "Inside the workflow",
+    "scrollExplore": "Scroll to explore",
+    "captures": "Workflow preview",
+    "previewNote": "Preview build",
+    "lastUpdated": "Last updated",
+    "homeLink": "Back to home",
+    "language": "Language",
+    "mainNavigation": "Main navigation",
+    "mobileNavigation": "Mobile navigation",
+    "walkthrough": "{name} application walkthrough",
+    "themeLight": "Switch to light theme",
+    "themeDark": "Switch to dark theme",
+    "motionReplay": "Replay animation",
+    "motionAutoplay": "Play animation",
+    "motionScroll": "Use scroll control",
+    "motionPlaying": "Playing the real application walkthrough",
+    "captureDisclaimer": "Interface figures are demo data, not client results."
   },
-  "hero": {
-    "line1": "We Don't Just Build.",
-    "line2": "We Master.",
-    "subtext": "We turn SaaS ideas into scalable products — web, mobile, and AI-powered — in weeks, not quarters. Your technical partner from the first line of code to your first million users.",
-    "cta": "Get Your Free Strategy Call",
-    "scroll": "Scroll"
-  },
-  "socialProof": {
-    "stat1": {
-      "number": "12+",
-      "label": "Products Launched"
+  "nav": [
+    {
+      "label": "Services",
+      "path": "/#services"
     },
-    "stat2": {
-      "number": "98%",
-      "label": "Client Retention"
+    {
+      "label": "Work",
+      "path": "/#work"
     },
-    "stat3": {
-      "number": "<24h",
-      "label": "Response Time"
+    {
+      "label": "Pricing",
+      "path": "/#pricing"
     },
-    "stat4": {
-      "number": "3",
-      "label": "Countries Served"
+    {
+      "label": "FAQ",
+      "path": "/#faq"
     }
+  ],
+  "hero": {
+    "eyebrow": "CUSTOM SOFTWARE · AI AUTOMATION",
+    "headlines": [
+      "Custom software, built around your business.",
+      "Bring your next app, system or automation to life.",
+      "Web apps, mobile apps and AI automation. Built around you."
+    ],
+    "description": "Itqan Tech builds web and mobile apps, internal systems and AI automation around what your business needs. We map the scope, agree a fixed price and show you progress every week.",
+    "micro": "Tell me what you want to build or improve. I'll record a free, personal 2-minute Loom showing how we'd approach it. No pitch, no obligation.",
+    "visualTitle": "One internal system",
+    "visualCaption": "Built around how your team works.",
+    "scroll": "Map → Build → Automate"
+  },
+  "problem": {
+    "eyebrow": "Sound familiar?",
+    "title": "Your business grew.",
+    "accent": "Your tools didn't.",
+    "items": [
+      "The same data typed into three places",
+      "Approvals lost in WhatsApp and email",
+      "Reports that take a day to pull together",
+      "Off-the-shelf tools that almost fit, and per-seat bills that keep growing"
+    ],
+    "closing": "Every workaround costs your team time, every week."
   },
   "services": {
-    "saas": {
-      "tag": "SaaS",
-      "title": "SaaS Development",
-      "desc": "Go from idea to paying users. We handle the complex architecture so you can focus on growing your business — built to scale from day one."
-    },
-    "mobile": {
-      "tag": "Mobile",
-      "title": "Mobile Apps",
-      "desc": "Apps your users won't delete. Native iOS and Android experiences designed to retain, engage, and convert — not just look pretty."
-    },
-    "web": {
-      "tag": "Web",
-      "title": "Web Development",
-      "desc": "Websites that work as hard as you do. Fast-loading, conversion-optimized web apps that turn visitors into customers."
-    }
-  },
-  "philosophy": {
-    "line1": "Most agencies focus on shipping code and closing tickets.",
-    "line2": "We focus on building the product that makes your competitors ",
-    "keyword": "irrelevant."
-  },
-  "builtFor": {
-    "kicker": "Who we work with",
-    "title": "Built for founders who:",
-    "items": [
-      "Have a validated idea but need a technical team to build it",
-      "Are tired of agencies that over-promise and under-deliver",
-      "Need a production-ready product, not a prototype",
-      "Want a partner who challenges their thinking, not just nods along"
-    ]
-  },
-  "portfolio": {
-    "p1": {
-      "name": "Core EN Platform",
-      "industry": "Engineering Operations",
-      "desc": "An engineering office ran on spreadsheets. We replaced every single one with a platform their whole team uses daily.",
-      "result": "Payroll went from 2 days to 4 hours. Zero spreadsheets left.",
-      "tech": ["Next.js", "TypeScript", "Prisma", "MySQL"],
-      "link": "/case-study/core-en"
-    },
-    "p2": {
-      "name": "Wasfa",
-      "industry": "Food & Lifestyle",
-      "desc": "A meal planning app that does three things perfectly: plan meals, find recipes, build shopping lists.",
-      "result": "4.8-star rating. Users save 3+ hours a week.",
-      "tech": ["React Native", "Expo", "TypeScript"],
-      "link": "/case-study/wasfa"
-    },
-    "viewProject": "View Case Study",
-    "midCta": {
-      "title": "Ready to build yours?",
-      "cta": "Let's Talk About Your Project"
-    }
-  },
-  "caseStudy": {
-    "backToPortfolio": "Back to Portfolio",
-    "overview": "Overview",
-    "challenge": "The Challenge",
-    "solution": "Our Approach",
-    "techStack": "Tech Stack",
-    "keyFeatures": "What We Built",
-    "results": "The Impact",
-    "nextProject": "Next Project",
-    "coreEn": {
-      "title": "Core EN Platform",
-      "subtitle": "One platform replaced every spreadsheet in the office.",
-      "industry": "Engineering Operations",
-      "overview": "An engineering design office ran their entire operation on spreadsheets — projects, timesheets, payroll, expenses, everything. We built Core EN to replace all of it. One platform, one source of truth, used by every person in the office, every day.",
-      "challenge": "Every Friday was chaos. Field engineers submitted timesheets on paper. The office manager re-entered them into Excel. Payroll took two full days of manual calculations — tax deductions, insurance, overtime. One mistake meant redoing the entire sheet. Project costs lived in a separate spreadsheet that was always outdated. Client invoices were assembled by hand. The office had outgrown its tools years ago, but every solution they'd tried was either too generic or too complicated to adopt.",
-      "solution": "We didn't build a generic ERP. We sat with the team — engineers, managers, accountants — and mapped exactly how they work. Then we built around their workflows, not the other way around. Engineers log timesheets and request leaves from their devices. Managers approve with one click. Payroll generates automatically with taxes, insurance, and overtime calculated. Invoices pull directly from project data. Every role sees exactly what they need, nothing more.",
-      "features": [
-        "Timesheet logging with overtime tracking — no more paper forms or Friday re-entry",
-        "One-click payroll generation — tax, insurance, and deductions calculated automatically",
-        "Leave and permission requests with multi-level approval chains",
-        "Project cost tracking that stays accurate because it pulls from live data",
-        "Invoice generation from project records — PDF export in seconds",
-        "Role-based dashboards — engineers, managers, and accountants each see what matters"
-      ],
-      "results": [
-        "Payroll processing dropped from 2 days to 4 hours",
-        "Zero spreadsheets in daily operations",
-        "Project setup went from 30 minutes to under 5",
-        "First time the office had real-time visibility into margins"
-      ]
-    },
-    "wasfa": {
-      "title": "Wasfa",
-      "subtitle": "The app that answers \"what's for dinner\" before you even ask.",
-      "industry": "Food & Lifestyle",
-      "overview": "Wasfa is a meal planning app for people who want to eat well but hate the mental load of deciding what to cook. Pick recipes, plan your week, get a shopping list — done. Available in English and Arabic.",
-      "challenge": "The weekly cycle: open the fridge, stare at it, close it, order delivery. You know you should plan meals. You've tried — pinned recipes on Pinterest, downloaded apps that wanted you to log macros and count calories. But all you actually need is a simple answer to one question: what am I cooking this week? Nothing on the market respected that simplicity.",
-      "solution": "We stripped meal planning to its core: three actions. Plan Meals. Find Recipes. Build Lists. No calorie tracking, no fitness goals, no onboarding questionnaire. Open the app, browse recipes, drag them into your week, and your shopping list writes itself. The design is intentionally calm — warm greens, clean type, zero clutter. We built it bilingual from day one, with full Arabic and English support, so it feels native in both languages.",
-      "features": [
-        "Drag meals into your weekly plan — the entire week visible at a glance",
-        "Browse curated recipes with filters that actually help you decide",
-        "Shopping lists generate automatically from your planned meals",
-        "Full Arabic and English experience — not a translation, native in both",
-        "Opens to your plan, not a settings screen — built for daily use",
-        "30-second onboarding — name, preferences, start planning"
-      ],
-      "results": [
-        "Users save 3+ hours a week they used to spend deciding what to cook",
-        "9 out of 10 users finish onboarding on their first launch",
-        "4.8-star average rating — users cite simplicity as the #1 reason",
-        "Live in 4 countries across English and Arabic markets"
-      ]
-    }
-  },
-  "process": {
-    "step1": {
-      "num": "01",
-      "title": "Discover",
-      "desc": "We learn your business, users, and market before anything else. You'll leave the first call with a clear technical roadmap — free."
-    },
-    "step2": {
-      "num": "02",
-      "title": "Architect",
-      "desc": "We map the system — data flow, user journeys, tech stack — before a single line of code."
-    },
-    "step3": {
-      "num": "03",
-      "title": "Engineer",
-      "desc": "AI-accelerated development. Weekly demos. You see progress, not promises."
-    },
-    "step4": {
-      "num": "04",
-      "title": "Launch & Scale",
-      "desc": "Deployment, monitoring, and iteration. We don't hand off and disappear — we stay post-launch until you're growing."
-    }
-  },
-  "testimonials": {
-    "t1": {
-      "quote": "We were 6 months behind on our product roadmap when we brought in Itqan. They shipped our MVP in 8 weeks and we closed our first enterprise contract a month later.",
-      "name": "Sarah Jenkins",
-      "role": "Founder",
-      "company": "MetricsCorp"
-    },
-    "t2": {
-      "quote": "Our previous agency treated us like a ticket queue. Itqan felt like a co-founder — they pushed back on bad ideas and proposed better architecture. Our churn dropped 40% after the rebuild.",
-      "name": "David Alston",
-      "role": "CEO",
-      "company": "NovaTech"
-    },
-    "t3": {
-      "quote": "The mobile app launched on time with zero critical bugs. We went from 0 to 50K downloads in 3 months. The animations and interactions our users love? That was all Itqan.",
-      "name": "Elena Rostova",
-      "role": "Product Lead",
-      "company": "Lumina"
-    }
-  },
-  "faq": {
-    "kicker": "Quick answers",
-    "title": "Common Questions",
-    "items": [
+    "eyebrow": "What we build",
+    "title": "One system, built around how your team works.",
+    "steps": [
       {
-        "q": "How much does a typical project cost?",
-        "a": "Projects typically range from $15K–$80K depending on scope. We'll give you an honest estimate on the first call — no surprises later."
+        "title": "Map",
+        "description": "We start with your workflow, not a feature list."
       },
       {
-        "q": "How long does development take?",
-        "a": "Most MVPs ship in 8–12 weeks. Complex platforms take 4–6 months. You'll see weekly demos from week one."
+        "title": "Build",
+        "description": "A web app, and mobile where it helps, with the roles, approvals and reports your team needs."
       },
       {
-        "q": "Do you work with early-stage startups?",
-        "a": "Yes — if you have a validated idea and are ready to invest in building it properly. We're not the right fit for 'just exploring' projects."
+        "title": "Automate",
+        "description": "AI handles the repetitive steps where it fits: data entry, follow-ups, summaries, routing."
+      }
+    ],
+    "cards": [
+      {
+        "name": "Internal apps",
+        "from": "Spreadsheets and paper",
+        "to": "One internal system"
       },
       {
-        "q": "What happens after launch?",
-        "a": "We don't disappear. We offer ongoing support, monitoring, and iteration packages. Most clients keep us on retainer."
+        "name": "Operations systems",
+        "from": "WhatsApp threads and manual steps",
+        "to": "Roles, approvals and reports"
       },
       {
-        "q": "Do I own the code?",
-        "a": "100%. You own everything we build — code, designs, infrastructure. No lock-in, no strings attached."
+        "name": "CRM and ERP workflows",
+        "from": "Off-the-shelf tools that almost fit",
+        "to": "Workflows built around your team"
       },
       {
-        "q": "What if I'm not happy with the work?",
-        "a": "Weekly demos mean you see progress constantly. If something isn't right, we course-correct immediately — not after months of silent development."
+        "name": "Dashboards and reporting",
+        "from": "Reports that take a day to pull together",
+        "to": "Dashboards and reporting"
+      },
+      {
+        "name": "Client portals",
+        "from": "Email approvals and copy-paste",
+        "to": "Client portals"
+      },
+      {
+        "name": "Integrations between the tools you already use",
+        "from": "The same data typed into three places",
+        "to": "Connected tools"
+      },
+      {
+        "name": "AI automation of repetitive team work",
+        "from": "Data entry, follow-ups, summaries, routing",
+        "to": "AI automation where it fits"
+      },
+      {
+        "name": "SaaS MVPs",
+        "from": "A feature list",
+        "to": "A web app built around the workflow"
       }
     ]
   },
-  "cta": {
-    "title": "Your next product is one conversation away.",
-    "subtext": "Book a free 30-minute call. We'll review your idea, outline the architecture, and tell you exactly what it takes to build it — even if you don't hire us.",
-    "primary": "Get Your Free Strategy Call",
-    "secondary": "Or email us directly → abdelrahman.abbas@itqan.tech",
-    "benefits": [
-      "Honest feedback on your product idea",
-      "A high-level technical roadmap",
-      "Estimated timeline and budget range",
-      "Clear next steps — zero obligation"
+  "work": {
+    "eyebrow": "Case studies",
+    "title": "Internal systems, built around the work.",
+    "ownLabel": "Our own product: Wasfa, an Arabic meal-planning app",
+    "clientLabel": "Client work"
+  },
+  "pricing": {
+    "eyebrow": "How it works",
+    "title": "Blueprint → Build → Care",
+    "fixed": "fixed",
+    "from": "From",
+    "monthly": "a month",
+    "blueprintName": "Blueprint",
+    "blueprintType": "Paid discovery and spec",
+    "blueprintCopy": "A short scoping sprint. We map your workflows and data, agree what's in and what's out, and give you a written spec with a fixed quote.",
+    "buildName": "Build",
+    "buildType": "Fixed-price build",
+    "buildCopy": "We build what the Blueprint scoped, for the price it set. Quoted after the Blueprint, paid in milestones, with a demo every week. You own the code.",
+    "buildTerms": "Quoted after the Blueprint",
+    "careName": "Care",
+    "careType": "Monthly support and changes",
+    "careCopy": "Hosting, monitoring, fixes and small changes after launch, so the system keeps up with your team.",
+    "closing": "Every build is priced in the Blueprint, before any work starts. No surprises.",
+    "credit": "The {fee} fee is credited to your build if you go ahead within {days} days.",
+    "minimum": "{months}-month minimum.",
+    "addon": "Arabic RTL interfaces are available as an add-on, priced in the Blueprint."
+  },
+  "process": {
+    "eyebrow": "Process",
+    "title": "Workflow first. Progress every week.",
+    "steps": [
+      {
+        "title": "Blueprint",
+        "description": "We map your workflows and data, agree what's in and what's out, and give you a written spec with a fixed quote."
+      },
+      {
+        "title": "Build",
+        "description": "A demo every week. You own the code."
+      },
+      {
+        "title": "Care",
+        "description": "Monitoring, fixes and small changes after launch, so the system keeps up with your team."
+      }
     ]
   },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Before we build.",
+    "items": [
+      {
+        "id": "cost",
+        "question": "How much does it cost?",
+        "answer": "Every project starts with a Blueprint: a paid discovery and spec for {blueprint} fixed, credited to your build if you go ahead within {creditDays} days. Builds start from {build}, at a fixed price quoted after the Blueprint. Care starts from {care} a month, with a {minimumMonths}-month minimum."
+      },
+      {
+        "id": "timeline",
+        "question": "How long does it take?",
+        "answer": "{blueprintTimeline} Build time depends on scope and is set in the Blueprint. {buildTimeline} You'll see a demo every week."
+      },
+      {
+        "id": "loom",
+        "question": "What's in the free 2-minute Loom?",
+        "answer": "You tell me the workflow that slows your team down. I record a short, personal video showing how a system could handle it for your team. No call needed and no obligation."
+      },
+      {
+        "id": "off-the-shelf",
+        "question": "Why not just use an off-the-shelf tool?",
+        "answer": "Sometimes you should, and we'll tell you. Custom makes sense when your workflow doesn't fit, per-seat costs keep climbing, or you're stitching five tools together."
+      },
+      {
+        "id": "ownership",
+        "question": "Who owns the code?",
+        "answer": "You do. {ownership}"
+      },
+      {
+        "id": "integrations",
+        "question": "Can you connect to the tools we already use?",
+        "answer": "Yes. We scope integrations in the Blueprint, for example accounting, email, calendars or your existing database."
+      },
+      {
+        "id": "international",
+        "question": "Do you work with teams outside Egypt?",
+        "answer": "Yes. We work with clients internationally and across the Gulf, in English or Arabic."
+      },
+      {
+        "id": "care",
+        "question": "What happens after launch?",
+        "answer": "Care: monitoring, fixes and small changes on a monthly plan, so you're never left alone with the system."
+      }
+    ]
+  },
+  "final": {
+    "eyebrow": "Your next step",
+    "title": "Show us the workflow that slows your team down.",
+    "body": "Send one line about your messiest workflow and get a free, personal 2-minute Loom with what we'd build. Prefer to talk? Book a 15-minute call."
+  },
+  "form": {
+    "title": "Request your free 2-minute Loom",
+    "name": "Name",
+    "email": "Work email",
+    "website": "Company website",
+    "role": "Role",
+    "workflow": "What's the workflow slowing your team down?",
+    "roles": [
+      "Founder",
+      "CEO",
+      "Owner",
+      "Agency owner",
+      "Operations lead",
+      "Other"
+    ],
+    "workflowHint": "20–600 characters.",
+    "privacy": "We'll use these details only to reply to your request. See our",
+    "sending": "Sending…",
+    "errorSummary": "Please check the highlighted fields.",
+    "deliveryError": "Your request wasn't saved. Please try again.",
+    "configurationError": "The request destination is not connected yet.",
+    "rateError": "Too many requests. Please try again in 10 minutes.",
+    "thanks": "Thanks, {firstName}. Your request is in.",
+    "success": "Abdelrahman will look at your workflow and record a personal 2-minute Loom showing what he'd build for it.",
+    "sooner": "Want to talk sooner?",
+    "another": "Send another request",
+    "honeypot": "Leave this field empty",
+    "errors": {
+      "name": "Enter your name (2–100 characters).",
+      "email": "Enter a valid work email.",
+      "website": "Enter a valid company website, such as example.com.",
+      "role": "Enter your role (2–100 characters).",
+      "workflow": "Describe the workflow in 20–600 characters."
+    }
+  },
+  "mock": {
+    "title": "Operations workspace",
+    "timesheets": "Timesheets",
+    "approvals": "Approvals",
+    "pipeline": "Pipeline",
+    "item": "Workflow",
+    "owner": "Role",
+    "state": "Status",
+    "rows": [
+      ["Timesheet logging", "Engineers", "Review"],
+      ["Leave and permissions", "Managers", "Approval"],
+      ["Payroll generation", "Accountants", "Prepared"]
+    ],
+    "stages": ["Lead management", "Sales pipeline", "Client management"],
+    "tabs": ["Timesheets", "Approvals", "Pipeline"],
+    "pending": "Review",
+    "approved": "Approved",
+    "flow": ["Timesheet logging", "Multi-level approval", "Payroll generation"],
+    "phaseNames": [
+      "The application",
+      "Inside the interface",
+      "One connected workflow"
+    ],
+    "phaseDescriptions": [
+      "The actual application, captured with demo data.",
+      "Real charts, tables and controls, separated into moving layers.",
+      "Explore the interface, then see how the pieces fit together."
+    ],
+    "visualNote": "Real application screenshots with demo data. Interface figures are sample data, not client results.",
+    "realEstate": {
+      "title": "Sales workspace",
+      "tabs": ["Leads and clients", "Listings and inventory", "Sales pipeline"],
+      "item": "Workflow",
+      "owner": "Workspace",
+      "state": "Status",
+      "rows": [
+        ["Lead and client management", "Office web app", "Review"],
+        ["Listings and unit inventory", "Office web app", "Available"],
+        ["Sales pipeline", "Agent iOS app", "In progress"]
+      ],
+      "flow": ["Lead and client management", "Sales pipeline", "Agent iOS app"],
+      "approved": "In progress"
+    }
+  },
   "footer": {
-    "tagline": "Mastery in every pixel.",
-    "systemStatus": "System Operational",
-    "rights": "© 2026 Itqan. All rights reserved.",
+    "promise": "We replace the spreadsheets, WhatsApp threads and manual steps running your operations with one internal system built around how your team works.",
+    "explore": "Explore",
+    "connect": "Get in touch",
+    "location": "Cairo, Egypt",
+    "copyright": "Itqan Tech",
+    "founder": "Founded by Abdelrahman Ahmed"
+  },
+  "legal": {
     "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
-  }
+    "terms": "Terms"
+  },
+  "notFound": {
+    "title": "This page isn't here.",
+    "description": "Return home or tell us about the workflow slowing your team down."
+  },
+  "meta": {
+    "/": {
+      "title": "Custom Software & AI Automation | Itqan Tech",
+      "description": "Custom web and mobile apps, internal systems and AI automation, built around your business. Clear scope, a fixed price and progress every week."
+    },
+    "/privacy": {
+      "title": "Privacy Policy | Itqan Tech",
+      "description": "Privacy Policy text to be supplied by Itqan Tech."
+    },
+    "/terms": {
+      "title": "Terms | Itqan Tech",
+      "description": "Terms text to be supplied by Itqan Tech."
+    }
+  },
+  "projects": [
+    {
+      "slug": "core-en",
+      "name": "Core En",
+      "generic": "An engineering company's management system",
+      "industry": "Engineering",
+      "title": "Engineering company management system",
+      "status": "live",
+      "platform": "Web app",
+      "summary": "The team uses it today, and we keep shipping changes as their needs evolve.",
+      "problem": "An engineering office ran projects, timesheets, payroll, leave and finance across spreadsheets and paper. Timesheets were re-typed into Excel, payroll was a long manual calculation each month, project costs lived in a separate sheet that was always out of date, and invoices were assembled by hand.",
+      "features": [
+        "Timesheet logging with overtime",
+        "Payroll generation with tax, insurance and deductions calculated",
+        "Leave and permission requests with multi-level approval",
+        "Project cost tracking from live data",
+        "Invoice generation with PDF export",
+        "Role-based dashboards for engineers, managers and accountants"
+      ],
+      "stack": ["Next.js", "TypeScript", "Prisma", "MySQL"]
+    },
+    {
+      "slug": "middlemen-mdos",
+      "name": "Middlemen (MDOS)",
+      "generic": "A real-estate CRM and inventory system",
+      "industry": "Real estate",
+      "title": "Real-estate CRM and inventory operating system, web + iOS",
+      "status": "in-build",
+      "platform": "Web + iOS",
+      "summary": "Lead and client management, listings and unit inventory, the sales pipeline, a web app for the office and an iOS app for agents in the field.",
+      "problem": "The office and agents in the field need lead and client management, listings and unit inventory, and the sales pipeline in one system.",
+      "features": [
+        "Lead and client management",
+        "Listings and unit inventory",
+        "The sales pipeline",
+        "A web app for the office",
+        "An iOS app for agents in the field"
+      ],
+      "stack": []
+    }
+  ]
 }
