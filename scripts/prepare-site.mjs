@@ -57,6 +57,7 @@ const config = {
   year: new Date().getUTCFullYear(),
   preview: showPending,
   heroVariant: owner.hero.variant,
+  optionalProduct: owner.flags.showWasfa,
   prices: p,
   booking: {
     url: owner.booking.url,

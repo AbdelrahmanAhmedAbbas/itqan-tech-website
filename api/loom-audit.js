@@ -1,6 +1,6 @@
 import { createHash, randomUUID } from "node:crypto";
 import { validateLead } from "../src/lib/lead-validation.js";
-import { siteConfig } from "../src/site.config.ts";
+import { siteConfig } from "../src/site.config.js";
 import { detectCountry } from "./visitor.js";
 export function createAuditHandler({
   env = process.env,
@@ -83,7 +83,7 @@ export function createAuditHandler({
     const { errors, data } = validateLead(body, {
       showEmailField: env.SITE_SHOW_EMAIL_FIELD
         ? env.SITE_SHOW_EMAIL_FIELD !== "false"
-        : siteConfig.flags.showEmailField,
+        : siteConfig.form.showEmailField,
     });
     if (Object.keys(errors).length) return res.status(422).json({ errors });
     if (!env.SHEETS_WEBHOOK_URL || !env.SHEETS_WEBHOOK_SECRET)

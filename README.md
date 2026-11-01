@@ -12,6 +12,8 @@ npm run preview
 
 `src/site.config.ts` owns prices, terms, links, flags and every owner confirmation. English copy lives in `src/i18n/en.json`; generated public config excludes the notification inbox, Sheet URL and secrets. Rebuild after editing config. The Arabic switch stays hidden until approved Arabic copy exists. Wasfa is OFF by default; its optional copy is in a separate locale file and is excluded from the default build.
 
+Vercel routing middleware uses the Node runtime. Middleware and the form API read the generated JavaScript configuration, avoiding TypeScript-extension imports in deployed functions. The owner still edits only `src/site.config.ts`.
+
 The funnel uses the exact Loom CTA, a five-field form, $300 fixed Blueprint → Build from $3,000 → Care from $600/month, and the two approved client cases. Product visuals are real application captures with demo/QA data. The latest owner request supersedes the earlier mock-screen requirement. Motion includes stronger staggered reveals, 12-second HyperFrames exploded UI layers, camera moves, chart-bar and pipeline-card animation, autoplay in the hero/cards, and scroll or play controls on case studies. A sun/moon switch in the header selects a full light or dark theme and remembers it across visits. Pause/reduced-motion support and still fallbacks remain available. See [visual sources](docs/capture-provenance.md).
 
 The owner broadened the hero to “Custom software, built around your business.” Its supporting copy welcomes web/mobile apps, systems and automation without restricting the audience to specific roles, team sizes or spreadsheet users. The home metadata and social preview follow this positioning.

@@ -1,4 +1,4 @@
-import { siteConfig } from "./src/site.config.ts";
+import { siteConfig } from "./src/site.config.js";
 export default function middleware(request: Request) {
   const url = new URL(request.url);
   if (url.hostname === "www.itqantech.org")
@@ -14,11 +14,14 @@ export default function middleware(request: Request) {
       301,
     );
   if (["/work/wasfa", "/case-study/wasfa"].includes(url.pathname)) {
-    if (!siteConfig.flags.showWasfa)
+    if (!siteConfig.optionalProduct)
       return Response.redirect(new URL("/" + url.search + "#work", url), 301);
     if (url.pathname.startsWith("/case-study/"))
       return Response.redirect(new URL("/work/wasfa" + url.search, url), 301);
   }
   return undefined;
 }
-export const config = { matcher: ["/((?!api|assets|fonts|motion|brand).*)"] };
+export const config = {
+  runtime: "nodejs",
+  matcher: ["/((?!api|assets|fonts|motion|brand).*)"],
+};
