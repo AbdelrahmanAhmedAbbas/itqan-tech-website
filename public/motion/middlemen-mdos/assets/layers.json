@@ -1,0 +1,71 @@
+{
+  "width": 1220,
+  "height": 888,
+  "layers": [
+    {
+      "id": "toolbar",
+      "rect": [
+        24,
+        20,
+        1172,
+        60
+      ]
+    },
+    {
+      "id": "tabs",
+      "rect": [
+        24,
+        90,
+        1172,
+        40
+      ]
+    },
+    {
+      "id": "filters",
+      "rect": [
+        24,
+        138,
+        1172,
+        74
+      ]
+    },
+    {
+      "id": "table",
+      "rect": [
+        24,
+        228,
+        1172,
+        110
+      ]
+    },
+    {
+      "id": "panel-a",
+      "rect": [
+        24,
+        354,
+        578,
+        305
+      ]
+    },
+    {
+      "id": "panel-b",
+      "rect": [
+        618,
+        354,
+        578,
+        159
+      ]
+    },
+    {
+      "id": "quality",
+      "rect": [
+        618,
+        528,
+        578,
+        262
+      ]
+    }
+  ],
+  "micros": [],
+  "source": "Source application / demo data"
+}

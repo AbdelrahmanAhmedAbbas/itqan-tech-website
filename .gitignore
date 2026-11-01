@@ -22,3 +22,15 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Automated review artifacts
+playwright-report/
+test-results/
+.env
+.env.*
+!.env.example
+
+# HyperFrames local history and capture-generated styles
+.hyperframes/
+.thumbnails/
+scripts/capture/core/capture.css

@@ -1,0 +1,404 @@
+/* Semantic surfaces: the product screenshots retain their original app colors. */
+:root {
+  --theme-header: #0d0e11;
+  --theme-card: #121318;
+  --theme-border: #30323b;
+  --theme-muted: #b2b3bf;
+  --theme-accent: #d9b98f;
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --void: #fcfbf9;
+  --surface: #f0f1f5;
+  --panel: #f5f5f7;
+  --line: #d3d5dc;
+  --text: #15151b;
+  --muted: #555965;
+  --blue-light: #185adb;
+  --sand: #805b2e;
+  --paper: #f4f1ec;
+  --ink: #171719;
+  --paper-muted: #555965;
+  --theme-header: #fcfbf9;
+  --theme-card: #f4f4f7;
+  --theme-border: #d3d5dc;
+  --theme-muted: #555965;
+  --theme-accent: #805b2e;
+}
+html,
+body {
+  background: var(--void);
+  color: var(--text);
+}
+.brand-for-light {
+  display: none;
+}
+[data-theme="light"] .brand-for-dark {
+  display: none;
+}
+[data-theme="light"] .brand-for-light {
+  display: block;
+}
+.theme-toggle {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--theme-border);
+  border-radius: 50%;
+  color: var(--text);
+  background: var(--theme-card);
+  transition:
+    transform 0.4s var(--ease),
+    background 0.25s;
+}
+.theme-toggle:hover {
+  transform: rotate(25deg);
+}
+.header-actions {
+  gap: 16px;
+}
+.site-header {
+  background: var(--theme-header);
+  border-color: var(--theme-border);
+}
+[data-theme="light"]
+  :is(
+    .hero-description,
+    .hero-micro,
+    .section-heading p,
+    .heading-row > p,
+    .problem-closing,
+    .solution-step p,
+    .process-grid p,
+    .project-card-description,
+    .case-summary,
+    .case-story-copy p,
+    .case-flow p,
+    .footer-brand p,
+    .footer-contact > p,
+    .footer-bottom,
+    .final-cta-copy > p,
+    .form-privacy,
+    .form-field small,
+    .form-success p,
+    .booking-dialog-header p,
+    .case-intro,
+    .case-back,
+    .case-meta,
+    .case-stack-section,
+    .capture-provenance,
+    .showcase-hint,
+    .static-capture-gallery figcaption,
+    .showcase-current-description
+  ) {
+  color: var(--theme-muted);
+}
+[data-theme="light"]
+  :is(
+    .desktop-nav a,
+    .footer-links a,
+    .footer-contact > a,
+    .footer-bottom a,
+    .brand,
+    .pain-item h3,
+    .case-feature h3,
+    .solution-step h3,
+    .process-grid h3,
+    .project-card-title h3,
+    .case-hero h1,
+    .final-cta-copy h2,
+    .legal-page h1,
+    .form-field label,
+    .form-success h3,
+    .showcase-chapters .is-current,
+    .navigation-drawer nav a,
+    .booking-dialog-header h2
+  ) {
+  color: var(--text);
+}
+[data-theme="light"]
+  :is(
+    .eyebrow,
+    .project-card-meta,
+    .planned-date,
+    .case-section-label,
+    .capture-fullsize,
+    .chapter-index,
+    .hero-index,
+    .small-cross,
+    .capability-row > p strong,
+    .solution-number,
+    .process-number
+  ) {
+  color: var(--theme-accent);
+}
+[data-theme="light"] .eyebrow > span {
+  background: var(--theme-accent);
+}
+[data-theme="light"]
+  :is(
+    .text-link,
+    .booking-link,
+    .form-privacy a,
+    .case-back,
+    .footer-links a:hover,
+    .footer-contact > a:hover
+  ) {
+  color: #185adb;
+}
+[data-theme="light"] :is(.hero-funnel h1 em, .section-heading em) {
+  color: #805b2e;
+}
+[data-theme="light"]
+  :is(
+    .pain-item,
+    .solution-step,
+    .capability-row,
+    .project-card,
+    .case-feature,
+    .case-flow,
+    .case-stack-section,
+    .case-story-section,
+    .case-features-section,
+    .hero-foot,
+    .process-grid > li,
+    .footer-top,
+    .footer-bottom,
+    .site-footer,
+    .navigation-drawer nav a,
+    .case-next,
+    .showcase-heading
+  ) {
+  border-color: var(--theme-border);
+}
+[data-theme="light"]
+  :is(
+    .pain-item,
+    .case-feature,
+    .form-shell,
+    .inline-loom-form,
+    .form-success,
+    .navigation-drawer,
+    .booking-dialog,
+    .motion-toggle,
+    .sticky-cta
+  ) {
+  background: var(--theme-card);
+  color: var(--text);
+  border-color: var(--theme-border);
+}
+[data-theme="light"]
+  :is(.solution-number, .process-number, .scroll-indicator, .icon-button) {
+  border-color: var(--theme-border);
+  color: var(--text);
+}
+[data-theme="light"]
+  :is(.form-field input, .form-field textarea, .form-field select) {
+  color: var(--text);
+  background: #fcfcfd;
+  border-color: #898d9b;
+}
+[data-theme="light"] :is(.form-field input, .form-field textarea)::placeholder {
+  color: #626675;
+}
+[data-theme="light"] .field-error,
+[data-theme="light"] .error-summary {
+  color: #a51926;
+}
+[data-theme="light"] .placeholder {
+  color: #6d4d29;
+  border-color: #947451;
+  background: #efe8de;
+}
+[data-theme="light"] .status-chip {
+  background: #f4ede2;
+  color: #6b4b26;
+  border-color: #b99b76;
+}
+[data-theme="light"] .status-chip.is-live {
+  background: #e6eee8;
+  color: #24583e;
+  border-color: #9cb3a3;
+}
+[data-theme="light"] .capability-row > p > span {
+  color: var(--theme-muted);
+}
+[data-theme="light"] .showcase-chapters li {
+  color: #626675;
+}
+[data-theme="light"] .showcase-chapters li.is-current {
+  color: var(--text);
+}
+[data-theme="light"] .showcase-chapters p {
+  color: #555965;
+}
+[data-theme="light"] .chapter-line {
+  background: #d3d5dc;
+}
+[data-theme="light"] .chapter-line i {
+  background: #956c3d;
+}
+[data-theme="light"] .scroll-showcase {
+  background: #f1f2f6;
+  border-color: var(--theme-border);
+}
+[data-theme="light"] .hyperframe-scene {
+  border-color: #c5c9d5;
+  background: #edf0f6;
+  box-shadow: 0 24px 70px #21345a12;
+}
+[data-theme="light"] .hero-grid-pattern {
+  opacity: 0.22;
+}
+[data-theme="light"] .site-footer {
+  background: #f1f1f4;
+}
+[data-theme="light"] .capture-badge {
+  background: #fcfcfd;
+  color: #31394c;
+  border-color: #c5c9d5;
+}
+[data-theme="light"] .capture-visual {
+  background: #e8ebf1;
+  border-color: #c5c9d5;
+}
+[data-theme="light"] .motion-toggle {
+  box-shadow: 0 5px 20px #16243a12;
+}
+[data-theme="light"] .funnel-actions .button-primary,
+[data-theme="light"] .form-submit {
+  color: #fafafa;
+}
+@media (max-width: 700px) {
+  .header-actions {
+    gap: 8px;
+  }
+  .theme-toggle {
+    margin-inline-end: 48px;
+  }
+  .motion-toggle,
+  body:has(.sticky-cta) .motion-toggle {
+    inset-inline-end: 74px;
+  }
+}
+/* Real product theatre. Playback runs inside HyperFrames; UI pixels are ungraded. */
+.hero-real-capture {
+  position: relative;
+  width: 100%;
+  transform: perspective(1600px) rotateY(-6deg) rotateX(3deg);
+  transform-origin: center;
+}
+.hero-real-capture .hyperframe-scene {
+  aspect-ratio: 1.6;
+  border: 1px solid var(--theme-border);
+  border-radius: 10px;
+  box-shadow: 0 25px 85px #0003;
+}
+.hero-app-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 11px;
+  color: var(--theme-muted);
+  margin-block-start: 18px;
+}
+.hero-app-caption a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  color: var(--theme-accent);
+}
+.capture-visual {
+  padding: 0;
+}
+.capture-visual .hyperframe-scene {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+}
+.capture-visual .scene-poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.capture-visual .capture-badge {
+  z-index: 5;
+  inset-block-end: 14px;
+  inset-inline-start: 14px;
+}
+.showcase-playback {
+  display: flex;
+  justify-content: flex-end;
+  margin: -12px 0 12px;
+}
+.motion-preview-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  border: 1px solid var(--theme-border);
+  padding: 5px 14px;
+  border-radius: 24px;
+  color: var(--theme-accent);
+  background: var(--theme-card);
+  font-size: 12px;
+}
+.motion-preview-button:disabled {
+  opacity: 0.6;
+}
+@media (max-width: 900px) {
+  .hero-real-capture {
+    transform: none;
+  }
+}
+@media (max-width: 700px) {
+  .hero-app-caption {
+    font-size: 10px;
+  }
+  .showcase-playback {
+    margin: 4px 0 12px;
+  }
+}
+[data-theme="light"] main > section:not(.paper),
+[data-theme="light"] .hero-funnel,
+[data-theme="light"] .solution-section,
+[data-theme="light"] .problem-section,
+[data-theme="light"] .work-section,
+[data-theme="light"] .process-section,
+[data-theme="light"] .final-cta-section,
+[data-theme="light"] .legal-page,
+[data-theme="light"] .case-hero,
+[data-theme="light"] .case-end-cta {
+  background: var(--void);
+}
+[data-theme="light"] .audit-form {
+  background: var(--theme-card);
+  color: var(--text);
+  border-color: var(--theme-border);
+}
+[data-theme="light"] .hero-foot {
+  background: transparent;
+}
+[data-theme="light"]
+  :is(
+    .pain-item-top > span,
+    .back-link,
+    .stack-tags > span,
+    .legal-date,
+    .legal-date time,
+    .hero-foot > span,
+    .hero-index
+  ) {
+  color: #555965;
+}
+[data-theme="light"] .stack-tags > span {
+  border-color: #c5c9d5;
+  background: #f3f3f6;
+}

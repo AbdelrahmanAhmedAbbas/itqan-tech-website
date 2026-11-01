@@ -1,5 +1,3 @@
 User-agent: *
 Allow: /
-
-# Sitemap location
-Sitemap: https://itqan.tech/sitemap.xml
+Sitemap: https://itqantech.org/sitemap.xml
