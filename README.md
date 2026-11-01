@@ -2,6 +2,8 @@
 
 The redesign is implemented locally. **Nothing has been deployed to production.** Preview: http://127.0.0.1:4173. Compare [light](http://127.0.0.1:4173/?theme=light) and [dark](http://127.0.0.1:4173/?theme=dark). [Editable HyperFrames preview](http://127.0.0.1:4567/#project/core-en).
 
+Merging this work into `master` does not authorize a production launch. `vercel.json → git.deploymentEnabled.master` is `false`, so automatic Git deployments from `master` are paused; other branches retain their preview deployments. When a production launch is authorized, configure the production Sheet/email settings and shared rate limiter, then remove this branch guard or set it to `true` before deploying.
+
 ```sh
 npm ci                 # Node 22+
 npm run build
